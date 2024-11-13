@@ -56,32 +56,21 @@ This stacking approach ensures that the model benefits from both linear (MLR) an
 The performance of the model is evaluated using the following metrics:
 
 1. **Mean Squared Error (MSE)**:
-   \[
-   \text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
-   \]
    - Measures the average squared difference between predicted and actual values.
 
 2. **Root Mean Squared Error (RMSE)**:
-   \[
-   \text{RMSE} = \sqrt{\text{MSE}}
-   \]
    - Provides the magnitude of prediction errors in the same units as the target variable.
 
 3. **R-Squared (R²) Score**:
-   \[
-   R^2 = 1 - \frac{\sum (y_i - \hat{y}_i)^2}{\sum (y_i - \bar{y})^2}
-   \]
    - Indicates the proportion of variance in the target variable explained by the model.
 
 ## 📊 Results
 The hybrid model demonstrates superior predictive performance compared to individual models. The meta-model effectively combines the strengths of MLR and KNN, achieving a higher R² score and lower RMSE:
 
-| Metric       | MLR   | KNN   | Hybrid Model (GBR) |
-|--------------|-------|-------|--------------------|
-| MSE (Heating)| 20.15 | 18.09 | 15.02              |
-| MSE (Cooling)| 45.00 | 19.88 | 16.31              |
-| RMSE         | 4.49  | 4.24  | 3.87               |
-| R² Score     | 0.78  | 0.81  | 0.87               |
+| Metric       | MSE   | RMSE   | R2 Score  |
+|--------------|-------|--------|-----------|
+| Heating      | 1.789 | 1.3379 | 0.9828    |
+| Cooling      | 2.324 | 1.5247 | 0.9749    |
 
 ## 🤝 Acknowledgment
 The authors express their gratitude to **Indian Institute of Information Technology, Pune** for providing the necessary resources and support for this research. Special thanks to **Dr. Shrikant Salve Sir** for his invaluable guidance and mentorship throughout the project.
